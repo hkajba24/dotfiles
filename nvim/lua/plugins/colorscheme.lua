@@ -1,11 +1,11 @@
 return {
   {
-    "marko-cerovac/material.nvim",
+    "rebelot/kanagawa.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("material").setup({
-        disable = { background = true },
+      require("kanagawa").setup({
+        colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
       })
     end,
   },
@@ -13,7 +13,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "material",
+      colorscheme = "kanagawa",
     },
   },
 }
