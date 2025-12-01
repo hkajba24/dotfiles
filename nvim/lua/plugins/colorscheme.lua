@@ -40,15 +40,21 @@ return {
   },
 
   {
-    "ellisonleao/gruvbox.nvim",
+    "vague-theme/vague.nvim",
     priority = 1000,
     lazy = false,
+    config = function()
+      require("vague").setup({
+        transparent = true,
+      })
+      vim.cmd("colorscheme vague")
+    end,
   },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "material",
+      colorscheme = "vague",
     },
   },
 }
