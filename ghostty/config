@@ -42,14 +42,13 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-family = "MonaspiceNe Nerd Font Mono"
-font-size = 12.5
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 14.5
 
-background = 121212
-#1F1F28 kanagawa
-#181616 kanagawa-dragon
-#121212 vitesse
-background-opacity = 0.9
-foreground = FFFFFF
-shell-integration-features = no-cursor
-cursor-style = block
+window-padding-x = 8
+window-padding-y = 8
+
+background-opacity = 0.85
+background-blur = true
+
+theme = vague
