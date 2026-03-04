@@ -47,14 +47,20 @@ return {
       require("vague").setup({
         transparent = true,
       })
-      vim.cmd("colorscheme vague")
+      --vim.cmd("colorscheme vague")
     end,
+  },
+
+  {
+    "dgox16/oldworld.nvim",
+    lazy = false,
+    priority = 1000,
   },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vague",
+      colorscheme = "material",
     },
   },
 }
