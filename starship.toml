@@ -1,17 +1,20 @@
+add_newline = false
+
+format = '''
+[╭─](#3b4252) $all'''
+
 [aws]
 symbol = "  "
 
 [buf]
 symbol = " "
 
-[bun]
-symbol = " "
-
 [c]
 symbol = " "
 
-[cpp]
-symbol = " "
+[character]
+success_symbol = "[╰─](#3b4252)"
+error_symbol = "[╰─](#3b4252)"
 
 [cmake]
 symbol = " "
@@ -25,11 +28,10 @@ symbol = " "
 [dart]
 symbol = " "
 
-[deno]
-symbol = " "
-
 [directory]
 read_only = " 󰌾"
+truncation_length = 2
+truncate_to_repo = false
 
 [docker_context]
 symbol = " "
@@ -45,9 +47,6 @@ symbol = " "
 
 [fossil_branch]
 symbol = " "
-
-[gcloud]
-symbol = "  "
 
 [git_branch]
 symbol = " "
@@ -162,9 +161,6 @@ symbol = " "
 [pijul_channel]
 symbol = " "
 
-[pixi]
-symbol = "󰏗 "
-
 [python]
 symbol = " "
 
@@ -188,3 +184,4 @@ symbol = " "
 
 [gradle]
 symbol = " "
+
