@@ -42,10 +42,13 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-family = "MonaspiceAR Nerd Font Mono"
+font-family = "MonaspiceNe Nerd Font Mono"
 font-size = 12
+
+window-height = 35
+window-width = 120
 
 window-padding-x = 8
 window-padding-y = 8
 
-theme = GitHub
+theme = dark:GitHub Dark Dimmed,light:GitHub
