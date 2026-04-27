@@ -1,0 +1,28 @@
+{
+  "project_panel": {
+    "dock": "right",
+  },
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 16,
+  "ui_font_family": "Noto Sans",
+  "buffer_font_family": "NotoSansM Nerd Font",
+  "buffer_font_size": 17,
+  "theme": {
+    "mode": "system",
+    "light": "GitHub Light",
+    "dark": "GitHub Dark Dimmed",
+  },
+  "disable_ai": true,
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "format_on_save": "on",
+  "toolbar": {
+    "breadcrumbs": false,
+    "agent_review": false,
+    "code_actions": false,
+    "quick_actions": false,
+  },
+}
