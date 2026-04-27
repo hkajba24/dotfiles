@@ -5,8 +5,9 @@
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 16,
   "ui_font_family": "Noto Sans",
-  "buffer_font_family": "NotoSansM Nerd Font",
+  "buffer_font_family": "MonaspiceNe Nerd Font",
   "buffer_font_size": 17,
+  "buffer_line_height": "comfortable",
   "theme": {
     "mode": "system",
     "light": "GitHub Light",
