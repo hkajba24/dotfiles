@@ -43,12 +43,11 @@
 # resize-overlay-duration = 4s 200ms
 
 font-family = "MonaspiceNe Nerd Font"
-font-size = 12
+font-size = 13
 
 window-height = 35
 window-width = 120
 
-window-padding-x = 8
-window-padding-y = 8
+window-padding-x = 15
 
 theme = dark:GitHub Dark Dimmed,light:GitHub
