@@ -4,16 +4,13 @@
 vim.g.mapleader = " "
 -- display line numbers
 vim.opt.number = true
--- never display relative line numbers
-vim.opt.relativenumber = false
+--display relative line numbers
+vim.opt.relativenumber = true
 -- enable 24-bit RGB colors
 vim.opt.termguicolors = true
 -- number of spaces that a tab counts as
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
--- enable autocompletion
-vim.opt.completeopt = "menu,menuone,noselect,popup"
-vim.o.autocomplete = true
 
 -- helper function to shorten github links
 local gh = function(x) return "https://github.com/" .. x end
@@ -29,7 +26,7 @@ require("github-theme").setup({
 	options = { transparent = true }
 })
 
--- set colorscheme
+-- set colorscheme, adjust based on system theme
 do
 	local function set_dark()
 		vim.o.background = "dark"
@@ -78,28 +75,23 @@ require("mason-tool-installer").setup({
 	}
 })
 
--- load LSPs
-vim.api.nvim_create_autocmd("LspAttach", {
-  group = vim.api.nvim_create_augroup("lsp_completion", { clear = true }),
-  callback = function(args)
-    local client_id = args.data.client_id
-    if not client_id then
-      return
-    end
-
-    local client = vim.lsp.get_client_by_id(client_id)
-    if client and client:supports_method("textDocument/completion") then
-      -- Enable native LSP completion for this client + buffer
-      vim.lsp.completion.enable(true, client_id, args.buf, {
-        autotrigger = true,   -- auto-show menu as you type (recommended)
-        -- You can also set { autotrigger = false } and trigger manually with <C-x><C-o>
-      })
-    end
-  end,
-})
-
 vim.lsp.enable("clangd")
 vim.lsp.enable("lua_ls")
+vim.lsp.enable("stylua")
+vim.lsp.enable("basedpyright")
+vim.lsp.enable("ruff")
+
+-- enable autocompletion and autopairing plugins
+vim.pack.add({
+	{ src = gh("saghen/blink.cmp"), version = "v1" },
+	{ src = gh("nvim-mini/mini.pairs"), version = "stable" },
+})
+require("blink.cmp").setup({
+	keymap = {
+		preset = "super-tab"
+	}
+})
+require("mini.pairs").setup({})
 
 -- install fuzzy finder
 vim.pack.add({
@@ -121,3 +113,4 @@ require("lualine").setup({
 		theme = "auto",
 	}
 })
+
