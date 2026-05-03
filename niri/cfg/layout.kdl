@@ -1,0 +1,49 @@
+prefer-no-csd
+
+ layout {
+        gaps 10 // Gap between windows
+        center-focused-column "never" // Don’t auto-center focused column
+
+        background-color "transparent" // <- needed for noctalia-shell to set wallpaper
+
+		default-column-width { proportion 0.6; }
+
+		preset-window-heights {
+        	proportion 0.33333
+        	proportion 0.5
+        	proportion 0.66667
+    	}
+
+        struts {}
+
+	focus-ring {
+		on
+		width 3
+		active-color "#c4a7e7"
+	}
+    }
+
+    window-rule {
+	    match app-id="firefox"
+	    default-column-width { proportion 0.8; }
+    }
+
+    window-rule {
+	    match app-id="code"
+	    default-column-width { proportion 1.0; }
+    }
+
+	window-rule {
+		match app-id="zed"
+		default-column-width { proportion 1.0; }
+	}
+	window-rule {
+		match app-id="ghostty"
+		default-column-width { proportion 0.8; }
+	}
+
+    window-rule {
+	    geometry-corner-radius 8
+	    clip-to-geometry true
+    }
+
