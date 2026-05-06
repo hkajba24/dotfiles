@@ -39,7 +39,7 @@ prefer-no-csd
 	}
 	window-rule {
 		match app-id="ghostty"
-		default-column-width { proportion 0.8; }
+		default-column-width { proportion 0.7; }
 	}
 
     window-rule {
