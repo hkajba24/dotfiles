@@ -42,7 +42,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-family = "Ioskeley Mono Medium"
+font-family = "SauceCodePro NF Medium"
 font-size = 12
 
 window-height = 35
@@ -50,4 +50,4 @@ window-width = 120
 
 window-padding-x = 15
 
-theme = dark:Nord,light:Nord Light
+theme = dark:Apple System Colors,light:Apple System Colors Light
