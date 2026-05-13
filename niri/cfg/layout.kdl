@@ -18,8 +18,8 @@ prefer-no-csd
 
 	focus-ring {
 		on
-		width 3
-		active-color "#808080"
+		width 2
+		active-color "#3093ff"
 	}
     }
 

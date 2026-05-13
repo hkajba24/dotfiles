@@ -43,11 +43,11 @@
 # resize-overlay-duration = 4s 200ms
 
 font-family = "SauceCodePro NF Medium"
-font-size = 12
+font-size = 13
 
 window-height = 35
 window-width = 120
 
 window-padding-x = 15
 
-theme = dark:Apple System Colors,light:Apple System Colors Light
+theme = dark:GitHub Dark Default,light:GitHub
