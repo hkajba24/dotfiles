@@ -18,7 +18,7 @@ prefer-no-csd
 
 	focus-ring {
 		on
-		width 2
+		width 3
 		active-color "#3093ff"
 	}
     }
